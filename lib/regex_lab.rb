@@ -1,15 +1,29 @@
 require 'pry'
 
 def starts_with_a_vowel?(word)
+<<<<<<< HEAD
   if word.match(/\b[aeiouAEIOU]/)
     true
   else
     false
+=======
+  if word.match(/[^aeiouAEIOU]/)
+    return true
+  else
+    return false
+>>>>>>> 27cfdc81981470987e7491bf4bd7d017a550cf2f
   end
 end
+binding.pry
 
+<<<<<<< HEAD
 def words_starting_with_un_and_ending_with_ing(text)
   text.scan(/\bun\w*ing\b/)
+=======
+
+def words_starting_with_un_and_ending_with_ing(text)
+  text.scan(/^un\w*+ing/)
+>>>>>>> 27cfdc81981470987e7491bf4bd7d017a550cf2f
 end
 
 
